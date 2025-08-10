@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>À propos de moi</h2>
+<p>Étudiant en informatique spécialisé en cybersécurité et développement.</p>
+
+<h4 class="mt-5 mb-3">Compétences techniques (basées sur GitHub)</h4>
+
+{% if lang_stats %}
+  {% for lang, percent in lang_stats.items() %}
+  <div class="mb-4">
+    <h5>{{ lang }}</h5>
+    <div class="progress">
+      <div class="progress-bar bg-info" role="progressbar" style="width: {{ percent }}%;" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100">{{ percent }}%</div>
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+  <p>Pas de données GitHub disponibles.</p>
+{% endif %}
+{% endblock %}
