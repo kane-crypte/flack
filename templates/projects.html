@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Mes Projets</h2>
-<div class="row">
-  {% for projet in projects %}
-  <div class="col-md-4 mb-4">
-    <div class="card h-100">
-      <img src="{{ url_for('static', filename=projet.image) }}" class="card-img-top" alt="{{ projet.title }}">
-      <div class="card-body">
-        <h5 class="card-title">{{ projet.title }}</h5>
-        <p class="card-text">{{ projet.description }}</p>
-        <a href="{{ projet.link }}" target="_blank" class="btn btn-primary">Voir le projet</a>
-      </div>
+<section class="container my-5">
+    <h2 class="text-center mb-4">Mes Projets</h2>
+    <div class="row">
+        {% for projet in projects %}
+        <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+                <img src="{{ url_for('static', filename=projet.image) }}" class="card-img-top" alt="{{ projet.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ projet.title }}</h5>
+                    <p class="card-text">{{ projet.description }}</p>
+                    <a href="{{ projet.link }}" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-  </div>
-  {% endfor %}
-</div>
+</section>
 {% endblock %}

@@ -1,21 +1,42 @@
 body {
     background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e9ecef;
+}
+
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
 }
 
 .progress {
-  height: 25px;
-  border-radius: 12px;
+    height: 25px;
+    border-radius: 12px;
 }
 
 .progress-bar {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 25px;
-  border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 25px;
+    border-radius: 12px;
+}
+
+footer {
+    position: relative;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }

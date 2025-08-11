@@ -3,12 +3,12 @@
         "title": "Projet 1",
         "description": "Description courte du projet 1.",
         "image": "img/projet1.png",
-        "link": "https://github.com/ton-compte/projet1"
+        "link": "https://github.com/kane-crypte/Portfolio"
     },
     {
         "title": "Projet 2",
         "description": "Description courte du projet 2.",
         "image": "img/projet2.png",
-        "link": "https://github.com/ton-compte/projet2"
+        "link": "https://github.com/kane-crypte/formationflutter"
     }
 ]
